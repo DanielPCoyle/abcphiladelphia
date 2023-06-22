@@ -40,10 +40,10 @@ export default function Page({
   page,
 }) {
   const router = useRouter()
+  const isPreviewing = useIsPreviewing();
   if (router.isFallback) {
     return <h1>Loading...</h1>
   }
-  const isPreviewing = useIsPreviewing();
   if (!page && !isPreviewing) {
     return (
       <>
