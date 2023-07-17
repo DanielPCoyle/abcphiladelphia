@@ -5,7 +5,7 @@ import DefaultErrorPage from 'next/error'
 import Head from 'next/head'
 
 // put your Public API Key you copied from Builder.io here
-const BUILDER_API_KEY = '8d83f5b405ca40b98d1296cf135e14e8'
+const BUILDER_API_KEY = process.env.BUILDER_IO_KEY;
 builder.init(BUILDER_API_KEY)
 
 
